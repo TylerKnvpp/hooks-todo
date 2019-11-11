@@ -9,6 +9,7 @@ Clone then enter the following commands in your terminal to run on your local ma
 ```terminal
 npm i json-server
 npm i
+json-server --watch db.json
 yarn start
 
 ```
