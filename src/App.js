@@ -10,7 +10,7 @@ const App = () => {
   return (
     <div className="App">
       <div>
-        <h1>TypeScript + Hooks ToDo App</h1>
+        <h1>React Hooks ToDo App</h1>
       </div>
       <Form />
       <TaskContainer />
