@@ -1,15 +1,10 @@
 import React from "react";
-import Task from "../Components/Task";
 
-export const CompletedContainer = props => {
-  const renderTasks = props.tasks.map(taskObj => {
-    return <Task key={taskObj.id} task={taskObj} />;
-  });
-
+export const CompletedContainer = () => {
   return (
     <div className="task-card">
       <h3>Completed:</h3>
-      {props.loading ? <h2>loading..</h2> : renderTasks}
+      <p>*render completed tasks here*</p>
     </div>
   );
 };

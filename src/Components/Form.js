@@ -1,25 +1,15 @@
-import React, { useState } from "react";
+import React from "react";
 
-export const Form = props => {
-  const [task, setTask] = useState("");
-
-  const handleSubmit = e => {
-    e.preventDefault();
-    if (task) {
-      props.handleSubmit(task);
-      setTask("");
-    } else {
-      alert("Please fill out the field");
-    }
-  };
-
+export const Form = () => {
   return (
-    <form className="form-card" onSubmit={handleSubmit}>
+    <form className="form-card">
       <h3>Please enter a task below:</h3>
       <label>Task:</label>
       <br />
-      <input className="field" onChange={e => setTask(e.target.value)} />
-      <button type="submit">Submit</button>
+      <input className="field" />
+      <button type="submit" className="submit-button">
+        Submit
+      </button>
     </form>
   );
 };

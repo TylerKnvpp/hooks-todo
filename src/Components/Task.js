@@ -1,18 +1,10 @@
 import React from "react";
 
-const Task = props => {
-  const handleCompleted = e => {
-    e.preventDefault();
-    props.handleClick(props.task);
-  };
-
+const Task = () => {
   return (
     <div className="task">
       <div className="inline-task">
-        {!props.task.completed ? (
-          <button className="button" onClick={handleCompleted} />
-        ) : null}
-        <h4>{props.task.task}</h4>
+        <h4>task details here</h4>
       </div>
     </div>
   );
